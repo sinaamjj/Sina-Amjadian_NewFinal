@@ -1,0 +1,52 @@
+.section {
+  direction: rtl;
+  font-family: "vazir";
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.header {
+  width: 90%;
+  margin: 7% 1% 2%;
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.section h2 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin: 0;
+}
+
+.count {
+  font-size: 1rem;
+  color: #009eca;
+}
+
+.empty {
+  text-align: center;
+  margin: 60px auto;
+  color: #6b7280;
+  font-family: "vazir";
+  font-size: 1.1rem;
+}
+
+@media (max-width: 390px) {
+  .header {
+    width: 90%;
+    margin: 10% auto 2%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    margin: 10% auto 2%;
+  }
+}

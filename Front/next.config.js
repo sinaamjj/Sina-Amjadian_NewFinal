@@ -10,6 +10,12 @@ const nextConfig = {
         port: "6500",
         pathname: "/static/images/**",
       },
+      {
+        protocol: "http",
+        hostname: "localhost",
+        port: "6501",
+        pathname: "/static/images/**",
+      },
     ],
   },
 };
