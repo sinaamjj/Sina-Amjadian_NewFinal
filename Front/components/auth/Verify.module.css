@@ -1,0 +1,105 @@
+.backDrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(3px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+  font-family: "vazir";
+}
+
+.container {
+  background: #fff;
+  padding: 50px 40px;
+  border-radius: 16px;
+  text-align: center;
+  width: min(90vw, 500px);
+  position: relative;
+}
+
+.closeBtn {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: #171717;
+}
+
+.container h1 {
+  font-size: 1.7rem;
+  color: #282828;
+  margin-bottom: 8px;
+}
+
+.container p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.otpContainer {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 10px;
+}
+
+.otpInput {
+  width: 45px !important;
+  height: 45px !important;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  text-align: center;
+  outline: none;
+}
+
+.otpInput:focus {
+  border-color: #28a745;
+}
+
+.timer,
+.resendActive {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.resendActive {
+  color: #28a745;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn {
+  background: #28a745;
+  color: #fff;
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "vazir";
+  font-size: 1rem;
+  transition: 0.3s;
+}
+
+.btn:disabled {
+  background: #b5e0c1;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background: #218838;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 270px;
+  }
+}

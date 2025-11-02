@@ -1,0 +1,87 @@
+.container {
+  background: #fff;
+  border: 1px solid #ececec;
+  border-radius: 14px;
+  padding: 70px 50px;
+  width: min(92vw, 500px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "vazir";
+}
+
+.inputGroup {
+  width: 100%;
+  text-align: right;
+}
+
+.inputGroup p {
+  margin-top: 20px;
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+.inputGroup input {
+  direction: rtl;
+  width: 93%;
+  padding: 15px;
+  border: 1px solid #ececec;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-top: 6px;
+  font-family: "vazir";
+}
+
+.backDrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(2px);
+  display: grid;
+  place-items: center;
+  z-index: 50;
+}
+
+.errorText {
+  width: 100%;
+  text-align: right;
+  margin-top: 10px;
+  color: #ff6b6b;
+  font-size: 12px;
+}
+
+.btn {
+  background-color: #28a745;
+  color: #fff;
+  width: 100%;
+  margin-top: 40px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-family: "vazir";
+  font-size: 1.1rem;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 21%;
+  left: 32%;
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 250px;
+  }
+
+  .closeBtn {
+    top: 16%;
+    left: 11%;
+  }
+}

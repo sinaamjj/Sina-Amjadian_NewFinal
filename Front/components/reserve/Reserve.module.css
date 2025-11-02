@@ -1,0 +1,262 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 50px;
+  font-family: "vazir", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  direction: rtl;
+}
+
+.rightContainer {
+  border: 1px solid #00000033;
+  width: 70%;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.leftContainer {
+  width: 30%;
+  background-color: #eeeeee8a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.title {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 10px;
+}
+
+.formGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.select {
+  width: 32%;
+  grid-column: span 3;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.dateInput {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #00000080;
+  border-radius: 10px;
+  padding: 5px 10px;
+  font-family: "vazir", sans-serif;
+}
+
+.dateInput input {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+  font-family: "vazir";
+}
+
+.summary {
+  padding-top: 20px;
+  width: 30%;
+}
+
+.priceBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.priceBox span {
+  color: rgb(12, 189, 189);
+  font-weight: bold;
+}
+
+.reserveBtn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.reserveBtn:hover {
+  background-color: #208838;
+}
+
+.leftText {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dashed #00000080;
+  padding-bottom: 10px;
+}
+
+.leftText h1 {
+  font-size: 1.7rem;
+}
+
+.leftText p {
+  color: #282828;
+}
+
+.width {
+  width: 32%;
+  grid-column: span 3;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+@media (max-width: 390px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+    margin: 0 auto;
+  }
+
+  .rightContainer {
+    width: 90%;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    padding: 1rem;
+    background: #fff;
+  }
+
+  .title {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 1rem;
+    justify-content: center;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  .formGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .dateInput,
+  .select,
+  .formGrid input {
+    width: 90%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px 12px;
+    font-size: 0.95rem;
+    font-family: "vazir";
+  }
+
+  .dateInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dateInput img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .leftContainer {
+    width: 90%;
+    background: #fff;
+    border: 1px solid #00000033;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: "vazir";
+  }
+
+  .leftText {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed #00000033;
+    padding-bottom: 1rem;
+    margin: 15px 0;
+  }
+
+  .leftText h1 {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  .leftText p {
+    font-size: 0.9rem;
+    color: #444;
+    margin: 0;
+  }
+
+  .priceBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9rem;
+    margin: 20px 0;
+  }
+
+  .priceBox p {
+    margin: 0;
+    color: #282828;
+  }
+
+  .priceBox span {
+    color: #009eca;
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .reserveBtn {
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: "vazir";
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .reserveBtn:hover {
+    background-color: #208838;
+  }
+
+  .loading {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .width {
+    width: 98%;
+  }
+}

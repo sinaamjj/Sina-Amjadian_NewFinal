@@ -1,0 +1,59 @@
+.card {
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #fff;
+  transition: transform 0.2s ease;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.content h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+.content p {
+  color: #282828b2;
+  margin-right: 10px;
+}
+
+.content span {
+  color: #009eca;
+}
+
+.button {
+  background: #28a745;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "vazir";
+  transition: all 0.3s;
+}
+
+.button:hover {
+  background: #2a8f02;
+}
+
+.bottomCard {
+  padding: 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #d9d9d9;
+}
+
+@media (max-width: 390px) {
+  .card {
+    width: 80%;
+    margin: 0 auto;
+  }
+}

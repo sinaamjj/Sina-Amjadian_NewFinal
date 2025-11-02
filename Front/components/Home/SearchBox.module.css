@@ -1,0 +1,110 @@
+.searchBox {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  width: fit-content;
+  background: #fff;
+  margin: 0 auto;
+  font-family: "vazir";
+}
+
+.container {
+  padding: 10px;
+  display: flex;
+}
+
+.searchField {
+  padding: 8px 12px;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.searchField input {
+  margin-right: 10px;
+}
+
+.middle {
+  border-left: 1px solid #bebebe;
+  border-right: 1px solid #bebebe;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-align: right;
+  font-family: "vazir";
+  cursor: pointer;
+}
+
+.searchBtn {
+  background: #28a745;
+  color: #fff;
+  border: none;
+  padding: 10px 60px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "vazir";
+  border-radius: 16px;
+  transition: all 0.3s;
+}
+
+.searchBtn:hover {
+  background: #218838;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: #fff;
+  border: 1px solid #0000001f;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  list-style: none;
+  padding: 10px;
+}
+
+.dropdown li {
+  padding: 10px 12px;
+  cursor: pointer;
+  text-align: right;
+  font-family: "vazir";
+  border-bottom: 1px solid #eee;
+  transition: background 0.2s;
+}
+
+.dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown li:hover {
+  background: #f5f5f5;
+}
+
+@media (max-width: 390px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+
+  .searchField {
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+
+  .searchBtn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}

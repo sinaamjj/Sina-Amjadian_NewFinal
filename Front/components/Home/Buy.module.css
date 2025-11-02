@@ -1,0 +1,144 @@
+.container {
+  display: flex;
+  border: 1px solid #00000040;
+  flex-direction: row-reverse;
+  width: 1200px;
+  margin: 8% auto;
+  justify-content: space-between;
+  border-radius: 10px;
+}
+
+.leftContainer {
+  width: 30%;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left p {
+  font-size: 1.8rem;
+  font-weight: 550;
+  margin-left: 13px;
+}
+
+.leftMain {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchBtn {
+  background: #10411b;
+  color: #fff;
+  border: none;
+  padding: 8px 50px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: "vazir";
+  border-radius: 10px;
+}
+
+.rightContainer {
+  display: flex;
+  width: 70%;
+  background-color: #28a745;
+  border-radius: 10px;
+  font-family: "vazir";
+  padding: 15px;
+}
+
+.rightText {
+  width: 100%;
+  direction: rtl;
+  text-align: right;
+  margin-right: 40px;
+}
+
+.rightText h1 {
+  font-size: 2.7rem;
+  color: #fff;
+}
+
+.rightText span {
+  color: #10411b;
+}
+
+.rightText p {
+  color: #fff;
+  font-size: 1.7rem;
+  margin-top: -10px;
+}
+.rightImage {
+  margin-bottom: -25px;
+}
+
+@media (max-width: 390px) {
+  .container {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .rightContainer {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0;
+  }
+
+  .rightImage {
+    margin: 0 auto 1rem auto;
+  }
+
+  .rightText {
+    text-align: center;
+    margin: 0;
+  }
+
+  .rightText h1 {
+    font-size: 1.3rem;
+    color: #fff;
+  }
+
+  .rightText p {
+    font-size: 1rem;
+    margin-top: 0.3rem;
+  }
+
+  .leftContainer {
+    width: 100%;
+    background: #fff;
+    padding: 1rem 0;
+  }
+
+  .leftMain {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .left {
+    margin-bottom: 0.5rem;
+  }
+
+  .left p {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  .searchBtn {
+    padding: 8px 40px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+  }
+}

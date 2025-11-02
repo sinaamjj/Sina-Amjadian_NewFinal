@@ -1,0 +1,28 @@
+.section {
+  direction: rtl;
+  font-family: "vazir";
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+}
+
+.section h2 {
+  width: 90%;
+  margin: 7% 1% 2%;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+@media (max-width: 390px) {
+  .section h2 {
+    width: 90%;
+    margin: 10% 10% 2%;
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}

@@ -1,0 +1,242 @@
+.container {
+  width: 1200px;
+  direction: rtl;
+  margin: 40px auto;
+  border: 1px solid #00000033;
+  background-color: #fff;
+  border-radius: 10px;
+  font-family: "vazir";
+}
+
+.topText {
+  margin-right: 20px;
+  width: 100%;
+}
+.topText h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.topText p {
+  color: #282828;
+  font-size: 1.2rem;
+}
+
+.top {
+  display: flex;
+  padding: 20px;
+}
+
+.info {
+  display: flex;
+}
+
+.infoText {
+  display: flex;
+  align-items: center;
+  margin: 20px 10px 20px 30px;
+  color: #7d7d7d;
+}
+
+.infoText p {
+  margin: 0 10px;
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price span {
+  font-size: 2rem;
+  color: #009eca;
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.button {
+  background: #28a745;
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+  padding: 15px 45px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: "vazir";
+  transition: all 0.3s;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.bottomIcons {
+  display: flex;
+}
+
+.bottomContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #00000040;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.bottomContainer:last-child {
+  border-left: none;
+}
+
+.bottomItem {
+  display: flex;
+  align-items: center;
+}
+
+.bottomItem p {
+  margin-right: 5px;
+}
+
+@media (max-width: 390px) {
+  .container {
+    border: none;
+    width: 90%;
+    margin: 1rem auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .title {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .top {
+    display: block;
+    padding: 0;
+  }
+
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+  }
+
+  .topText {
+    width: 90%;
+    padding: 1rem;
+    margin: 0;
+    text-align: right;
+  }
+
+  .topText h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .topText p {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+  }
+
+  .infoText {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    color: #666;
+  }
+
+  .infoText p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 0;
+  }
+
+  .price {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .price span {
+    font-size: 1.4rem;
+    color: #009eca;
+  }
+
+  .button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+
+  .bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.8rem;
+    padding: 1rem;
+    border-top: 1px solid #00000022;
+  }
+
+  .bottomContainer {
+    border: none;
+    text-align: center;
+    font-size: 0.85rem;
+    padding: 0;
+    margin-top: 10px;
+    color: #333;
+  }
+
+  .bottomIcons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+  }
+
+  .bottomItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #333;
+  }
+
+  .bottomItem p {
+    font-size: 0.85rem;
+    margin: 0;
+  }
+
+  .bottomContainer span {
+    display: block;
+    font-size: 0.8rem;
+    color: #444;
+    margin-top: 2px;
+  }
+
+  .bottom img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .hidden {
+    display: none;
+  }
+}

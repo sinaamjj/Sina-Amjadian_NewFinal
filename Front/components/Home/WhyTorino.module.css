@@ -1,0 +1,123 @@
+.container {
+  direction: rtl;
+  width: 1200px;
+  margin: 0 auto;
+  font-family: "vazir";
+  display: flex;
+}
+
+.right {
+  width: 50%;
+}
+
+.rightImage {
+  background: linear-gradient(180deg, #28a745 0%, #10411b 100%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  padding: 15px;
+  margin-left: 15px;
+}
+
+.rightTitle {
+  display: flex;
+  align-items: center;
+}
+
+.rightText h2 {
+  font-size: 1.4rem;
+}
+
+.spanTitle {
+  color: #28a745;
+}
+
+.rightText {
+  width: 80%;
+  text-align: justify;
+  line-height: 60px;
+}
+
+.mySwiper {
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 60px;
+}
+
+.slide {
+  width: 280px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.image {
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.left {
+  width: 50%;
+}
+
+@media (max-width: 390px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    text-align: center;
+  }
+
+  .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rightTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+
+  .rightImage {
+    width: 16px;
+    height: 16px;
+    padding: 12px;
+    margin-left: 8px;
+  }
+
+  .rightTitle h1 {
+    font-size: 1.2rem;
+  }
+
+  .rightText {
+    display: none;
+  }
+
+  .left {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .mySwiper {
+    width: 70%;
+    padding: 1rem 0;
+  }
+
+  .slide {
+    width: 250px !important;
+  }
+
+  .image {
+    border-radius: 16px;
+    height: 200px;
+  }
+}
